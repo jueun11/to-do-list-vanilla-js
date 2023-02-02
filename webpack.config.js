@@ -8,5 +8,5 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     //현재경로 하위에 dist 폴더를 의미한다.
   },
-  Plugins: [new Htmlwebpackplugin()],
+  plugins: [new HtmlWebpackPlugin()],
 };
