@@ -10,10 +10,12 @@ let ItemId = 0;
 TodoAddBtn.addEventListener("click", (event) => {
   if (TodoAddInput.value) {
     //값이 없으면 false이다.
+
     let newItems = { id: ItemId, content: TodoAddInput.value };
-    TodoAddInput.value = "";
-    // ItemId++;
+    //객체를 만들어주고
     TodoListItems.push(newItems);
+    //list배열에 객체를 추가해주었다.
+    TodoAddInput.value = "";
     List();
   } else {
     TodoAddInput.focus();
