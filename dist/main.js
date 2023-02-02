@@ -1,0 +1,1 @@
+(()=>{"use strict";document.getElementById("root").innerHTML="<h1>테스트 메시지 입니다. 개발모드 테스트입니다.</h1>3"})();
