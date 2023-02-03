@@ -1,3 +1,3 @@
-import "./css/reset.css";
-import "./css/index.css";
-import "./js/TodoAddInput";
+import "../css/reset.css";
+import "../css/index.css";
+import "./TodoList";
