@@ -1,11 +1,11 @@
 @charset "UTF-8";
+body {
+  background-color: rgb(124, 124, 124);
+}
+
 #root {
-  width: 100vw;
-  height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: rgb(128, 128, 128);
 }
 
 h1 {
@@ -14,19 +14,39 @@ h1 {
 }
 
 section {
+  width: 300px;
+  margin-top: 20vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
 }
 
 .TodoAdd {
-  border: 1px solid black;
-  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.TodoAddInput {
+  width: 80%;
+  padding: 5px;
+}
+
+.TodoAddBtn {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .CheckBtn {
   width: 20px;
   height: 20px;
+}
+
+.CheckBtn:hover {
+  cursor: pointer;
 }
 
 .RemoveBtn {
@@ -49,6 +69,12 @@ li {
 }
 
 .item {
-  border: 1px solid red;
   display: flex;
+  margin: 20px 0;
+  padding: 15px 10px;
+  background-color: #fff;
+}
+
+.CheckBtn-Checked {
+  background-color: aqua;
 }/*# sourceMappingURL=index.css.map */

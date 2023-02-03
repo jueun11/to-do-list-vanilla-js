@@ -1,28 +1,46 @@
+body {
+  background-color: rgb(124, 124, 124);
+}
+
 #root {
-  width: 100vw;
-  height: 100vh;
+  // height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: rgb(128, 128, 128);
 }
 h1 {
   margin-bottom: 5vh;
   text-align: center;
 }
 section {
+  width: 300px;
+  margin-top: 20vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
 }
 .TodoAdd {
-  border: 1px solid black;
-  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
+.TodoAddInput {
+  width: 80%;
+  padding: 5px;
+}
+.TodoAddBtn {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .CheckBtn {
   width: 20px;
   height: 20px;
+}
+
+.CheckBtn:hover {
+  cursor: pointer;
 }
 
 .RemoveBtn {
@@ -38,11 +56,19 @@ section {
   content: "\00d7";
   font-size: 14px;
 }
+
 li {
   display: flex;
   justify-content: space-between;
 }
 .item {
-  border: 1px solid red;
   display: flex;
+  margin: 20px 0;
+  padding: 15px 10px;
+  background-color: #fff;
+}
+
+//완료시 넣어줄 클래스 스타일
+.CheckBtn-Checked {
+  background-color: aqua;
 }
